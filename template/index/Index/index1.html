@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10,user-scalable=no" />
     <title>登陆模板页</title>
-
-    <link rel="stylesheet" href="__PUBLIC__/css/public_style.css">
+    <script src="__PUBLIC__/js/jq-3.2.0.js"></script>
+    <script src="__PUBLIC__/js/login_js.js"></script>
+    <script src="__PUBLIC__/js/public_page-size.js"></script>
     <link rel="stylesheet" href="__PUBLIC__/css/login_style.css">
 </head>
 <body style="background: #ccc;">
 <!--信息弹窗-->
-<div class="public-promptMessage" style="display: none">
+<div class="login-promptMesage">
     <div class="">
         <p>提示！</p>
         <span>this is message</span>
-        <button class="public-promptClose">确定</button>
+        <button class="login-promptClose">确定</button>
     </div>
 </div>
 <div method="post" action="" class="login-outer">
@@ -36,22 +37,17 @@
     <!--记住密码 找回密码-->
     <div class="login-remeberAndForgot">
 
-        <a href="rechangepasword.html" >找回密码</a>
+        <a href="" >找回密码</a>
     </div>
     <!--登陆按钮-->
     <input type="submit" value="Sing in" class="login-loginButton">
     <!--注册-->
     <div class="login-joinUs">
-        <a href="{:url('/index.php/'.request()->module().'/Index/register')}" >
+        <a href="">
             还没有账户 &nbsp;<span>点此注册</span>
         </a>
     </div>
 </div>
 
 </body>
-<script src="__PUBLIC__/js/jq-3.2.0.js"></script>
-<script src="__PUBLIC__/js/public_page-size.js"></script>
-<script src="__PUBLIC__/js/public_comment.js"></script>
-<script src="__PUBLIC__/js/login_js.js"></script>
-
 </html>
