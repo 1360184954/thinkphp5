@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10,user-scalable=no" />
+    <title>登陆模板页</title>
+    <script src="__PUBLIC__/js/jq-3.2.0.js"></script>
+    <script src="__PUBLIC__/js/login_js.js"></script>
+    <script src="__PUBLIC__/js/public_page-size.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/login_style.css">
+</head>
+<body style="background: #ccc;">
+<!--信息弹窗-->
+<div class="login-promptMesage">
+    <div class="">
+        <p>提示！</p>
+        <span>this is message</span>
+        <button class="login-promptClose">确定</button>
+    </div>
+</div>
+<div method="post" action="" class="login-outer">
+    <!--页面标题信息-->
+    <div class="login-pageTitle">Sign in</div>
+    <!--登陆框-->
+    <div class="login-inputBlock">
+        <!--输入行-->
+        <div class="login-userInput">
+            <img src="__PUBLIC__/images/login_userIcon.png" class="" />
+            <input type="text" class="" placeholder="user code" />
+        </div>
+        <!--输入行-->
+        <div class="login-userInput">
+            <img src="__PUBLIC__/images/login_pwd.png" class="" />
+            <input type="text" class="" placeholder="password" />
+        </div>
+    </div>
+    <!--记住密码 找回密码-->
+    <div class="login-remeberAndForgot">
+
+        <a href="" >找回密码</a>
+    </div>
+    <!--登陆按钮-->
+    <input type="submit" value="Sing in" class="login-loginButton">
+    <!--注册-->
+    <div class="login-joinUs">
+        <a href="">
+            还没有账户 &nbsp;<span>点此注册</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
